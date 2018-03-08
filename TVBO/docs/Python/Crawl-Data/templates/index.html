@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crawl</title>
+</head>
+<body>
+    {% for post in data%}
+        <div><a href="/post/{{post.url[19:]}}">{{post.data.title|safe}}</a></div>
+    {%endfor%}
+</body>
+</html>
